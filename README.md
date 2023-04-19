@@ -5,8 +5,9 @@
 
 
 link to module
+````
 https://github.com/AngryBeaver/bsa-pf1/releases/latest/download/module.json
-
+````
 [system-interface](https://github.com/AngryBeaver/beavers-system-interface)
 
 [example module](https://github.com/AngryBeaver/beavers-crafting)
