@@ -24,6 +24,9 @@
     "download": "https://github.com/AngryBeaver/bsa-pf1/releases/latest/download/bsa-pf1.zip",
     "relationships": {
       "systems": [
+        {
+          "id": "pf1"
+        }
       ]
     },
     "compatibility": {
