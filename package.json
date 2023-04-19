@@ -1,7 +1,7 @@
 {
 	"name": "bsa-pf1",
 	"title": "Beaver's System Adaption pf1",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Beaver's System Adaption pf1",
 	"devDir": "C:\\Users\\Riess\\AppData\\Local\\FoundryVTT\\Data\\modules",
 	"main": "src/main.js",

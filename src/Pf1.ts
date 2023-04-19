@@ -10,11 +10,17 @@ export class pf1 implements SystemApi {
 
     async actorRollSkill(actor, skillId){
         const message = await actor.rollSkill(skillId);
+        if(!message){
+            return null
+        }
         return message.rolls[0];
     }
 
     async actorRollAbility(actor, abilityId){
         const message =  await actor.rollAbilityTest(abilityId);
+        if(!message){
+            return null
+        }
         return message.rolls[0];
     }
 
