@@ -1,3 +1,5 @@
+import {CUSTOM_SKILLS, NAMESPACE} from "./PF1Settings.js";
+
 export class pf1 implements SystemApi {
 
     get version() {
@@ -7,8 +9,16 @@ export class pf1 implements SystemApi {
     get id() {
         return "pf1";
     }
-
     async actorRollSkill(actor, skillId){
+        if(!Object.keys(actor.system.skills).includes(skillId)){
+            Object.entries(actor.system.skills).forEach(([id,skill])=>{
+                // @ts-ignore
+                if(skill.name && skill.name.toLowerCase().trim() === skillId){
+                   skillId = id;
+                }
+            });
+        }
+
         const message = await actor.rollSkill(skillId);
         if(!message){
             return null
@@ -53,12 +63,17 @@ export class pf1 implements SystemApi {
     }
 
     get configSkills():SkillConfig[] {
-        return Object.entries(CONFIG["PF1"].skills).map(skills => {
+        const customSkillString:String = game[NAMESPACE].Settings.get(CUSTOM_SKILLS) || "";
+        const skills = Object.entries(CONFIG["PF1"].skills).map(skills => {
             return {
                 id: skills[0],
                 label: skills[1] as string
             };
         })
+        customSkillString.split(",").forEach(skill=>{
+            skills.push({id:skill.trim().toLowerCase(), label:skill.trim()})
+        });
+        return skills;
     }
 
     get configAbilities():AbilityConfig[] {
