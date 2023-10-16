@@ -16,6 +16,16 @@ export class pf1 implements SystemApi {
                 if(skill.name && skill.name.toLowerCase().trim() === skillId){
                    skillId = id;
                 }
+                // @ts-ignore
+                if(skill.subSkills){
+                    // @ts-ignore
+                    Object.entries(skill.subSkills).forEach(([subId,subSkill])=>{
+                        // @ts-ignore
+                        if(subSkill.name && subSkill.name.toLowerCase().trim() === skillId){
+                            skillId = `${id}.subSkills.${subId}`;
+                        }
+                    })
+                }
             });
         }
 

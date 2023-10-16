@@ -1,10 +1,10 @@
 {
 	"name": "bsa-pf1",
 	"title": "Beaver's System Adaption pf1",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Beaver's System Adaption pf1",
-	"devDir": "D:\\Vtts\\v10\\Data\\modules",
-	"#devDir": "D:\\Vtts\\v11\\Data\\modules",
+	"#devDir": "D:\\Vtts\\v10\\Data\\modules",
+	"devDir": "D:\\Vtts\\v11\\Data\\modules",
 	"main": "src/main.js",
 	"files": [
 		"src/types.ts"
