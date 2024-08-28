@@ -8,4 +8,6 @@ Hooks.on("beavers-system-interface.init", async function(){
 Hooks.on("ready", async function(){
     game[NAMESPACE] = game[NAMESPACE] || {};
     game[NAMESPACE].Settings = new PF1Settings();
+    import("./SkillTest.js")
+    import("./AbilityTest.js")
 })
