@@ -100,22 +100,22 @@ export class pf1 implements SystemApi {
             {
                 id: "pp",
                 factor: 1000,
-                label: game["i18n"].localize("PF1.CurrencyPlatinumP"),
+                label: game["i18n"].localize("PF1.Currency.Full.pp"),
             },
             {
                 id: "gp",
                 factor: 100,
-                label: game["i18n"].localize("PF1.CurrencyGoldP"),
+                label: game["i18n"].localize("PF1.Currency.Full.gp"),
             },
             {
                 id: "sp",
                 factor: 10,
-                label: game["i18n"].localize("PF1.CurrencySilverP"),
+                label: game["i18n"].localize("PF1.Currency.Full.sp"),
             },
             {
                 id: "cp",
                 factor: 1,
-                label: game["i18n"].localize("PF1.CurrencyCopperP"),
+                label: game["i18n"].localize("PF1.Currency.Full.cp"),
             }
         ]
     }

@@ -2,7 +2,7 @@
     "title": "Beaver's System Adaption pf1",
     "description": "pf1 implementation for Beaver's System Interface",
     "id": "bsa-pf1",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "authors": [
       {
         "name": "angryBeaver",

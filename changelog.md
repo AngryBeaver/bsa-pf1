@@ -1,3 +1,5 @@
+# 1.1.1
+fix currency names
 # 1.1.0
 add SkillTest and AbilityTest for modular Testsystem
 # 1.0.3
