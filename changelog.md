@@ -1,3 +1,5 @@
+# 1.2.0
+add color scheme
 # 1.1.1
 fix currency names
 # 1.1.0
