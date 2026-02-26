@@ -62,7 +62,9 @@ export class pf1 implements SystemApi {
         tabContent.append(tabBody);
     }
 
-    actorSheetTabSelector: 'nav[data-group="primary"] [data-tab]';
+    get actorSheetTabSelector():string{
+        return 'nav[data-group="primary"] [data-tab]';
+    }
 
     itemSheetReplaceContent(app, html, element):void {
         html.find('.sheet-navigation').remove();
